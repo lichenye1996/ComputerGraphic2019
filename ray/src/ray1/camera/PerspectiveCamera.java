@@ -61,15 +61,15 @@ public class PerspectiveCamera extends Camera {
         // 1) Transform inU so that it lies between [-viewWidth / 2, +viewWidth / 2] 
         //    instead of [0, 1]. Similarly, transform inV so that its range is
         //    [-vieHeight / 2, +viewHeight / 2]
-        // 2) Set the origin field of outRay for a perspective camera.
-        // 3) Set the direction field of outRay for an perspective camera. This
-        //    should depend on your transformed inU and inV and your basis vectors,
-        //    as well as the projection distance.
         double width = getViewWidth();
         double height = getViewHeight();
         double transInU = ((double)inU/1.) * width - width / 2.;
         double transInV = ((double)inV/1.) * height - height / 2.;
+        // 2) Set the origin field of outRay for a perspective camera.
         Vector3d rayDir = u.clone().mul(transInU).add(v.clone().mul(transInV)).sub(w.clone().mul(getProjDistance()));
+        // 3) Set the direction field of outRay for an perspective camera. This
+        //    should depend on your transformed inU and inV and your basis vectors,
+        //    as well as the projection distance.
         outRay.set(e.clone(), rayDir);
 
     }
