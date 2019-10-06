@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/filters/filters.iml" filepath="$PROJECT_DIR$/filters/filters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mesh/mesh.iml" filepath="$PROJECT_DIR$/mesh/mesh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ray/ray.iml" filepath="$PROJECT_DIR$/ray/ray.iml" />
+    </modules>
+  </component>
+</project>

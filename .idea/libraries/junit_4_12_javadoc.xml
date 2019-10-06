@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="junit-4.12-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ray/src/ray1/tests/junit-4.12-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
