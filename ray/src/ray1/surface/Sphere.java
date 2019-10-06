@@ -1,5 +1,6 @@
 package ray1.surface;
 
+import egl.math.Vector2d;
 import ray1.IntersectionRecord;
 import ray1.Ray;
 import egl.math.Vector3;
@@ -34,18 +35,33 @@ public class Sphere extends Surface {
    * outRecord is not modified.
    *
    * @param outRecord the output IntersectionRecord
-   * @param ray the ray to intersect
+   * @param rayIn the ray to intersect
    * @return true if the surface intersects the ray
    */
   public boolean intersect(IntersectionRecord outRecord, Ray rayIn) {
     // TODO#Ray Task 2: fill in this function.
 
-	    
+	    Vector3d direction = rayIn.direction;
+	    Vector3d origin = rayIn.origin;
+	    double delta = (direction.clone().dot(origin.clone())) * (direction.clone().dot(origin.clone()))
+                - origin.clone().dot(origin.clone()) + 1;
+	    if (delta < 0) {
+	      return false;
+        }
+	    double t1 = - direction.clone().dot(origin.clone()) - Math.sqrt(delta);
+	    double t2 = - direction.clone().dot(origin.clone()) + Math.sqrt(delta);
+	    double t = t1 >= 0 ? t1 : t2;
+	    Vector3d location = origin.clone().add(direction.clone().mul(t));
+	    Vector3d centerd = new Vector3d(center.x, center.y, center.z);
+	    Vector3d normal = location.clone().sub(centerd.clone()).normalize();
+	    Vector2d coord = new Vector2d(0, 0);
 	    // If there was an intersection, fill out the intersection record
-
-	  
-	    
-	    return false;
+        outRecord.location.set(location);
+        outRecord.normal.set(normal);
+        outRecord.texCoords.set(coord);
+        outRecord.surface = this;
+        outRecord.t = t;
+	    return true;
   }
   
   /**
