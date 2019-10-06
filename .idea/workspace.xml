@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="741a6f23-58c8-47de-95a7-47334c2c9266" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ray/src/ray1/camera/OrthographicCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/ray/src/ray1/camera/OrthographicCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ray/src/ray1/camera/PerspectiveCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/ray/src/ray1/camera/PerspectiveCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ray/src/ray1/surface/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/ray/src/ray1/surface/Sphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ray/src/ray1/surface/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/ray/src/ray1/surface/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ray/src/ray1/tests/SphereTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ray/src/ray1/tests/SphereTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,12 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/OrthographicCamera.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
@@ -31,19 +32,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/Camera.java">
+        <entry file="file://$PROJECT_DIR$/ray/src/ray1/surface/Sphere.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="366">
+              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/PerspectiveCamera.java">
+        <entry file="file://$PROJECT_DIR$/ray/src/ray1/surface/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="496">
+              <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+              <folding>
+                <element signature="e#2806#2807#0" expanded="true" />
+                <element signature="e#2843#2844#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ray/src/ray1/IntersectionRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ray/src/ray1/tests/TriangleTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -58,6 +82,9 @@
       <list>
         <option value="$PROJECT_DIR$/ray/src/ray1/camera/PerspectiveCamera.java" />
         <option value="$PROJECT_DIR$/ray/src/ray1/camera/OrthographicCamera.java" />
+        <option value="$PROJECT_DIR$/ray/src/ray1/tests/SphereTests.java" />
+        <option value="$PROJECT_DIR$/ray/src/ray1/surface/Sphere.java" />
+        <option value="$PROJECT_DIR$/ray/src/ray1/surface/Triangle.java" />
       </list>
     </option>
   </component>
@@ -103,6 +130,13 @@
               <item name="ray1" type="462c0819:PsiDirectoryNode" />
               <item name="camera" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ComputerGraphic2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ray" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ray1" type="462c0819:PsiDirectoryNode" />
+              <item name="surface" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -130,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TriangleTests.testIntersectNoNormals">
     <configuration name="Camera" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ray1.camera.Camera" />
       <module name="ray" />
@@ -144,8 +178,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SphereTests.testIntersectCanonical" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ray" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ray1.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ray1.tests" />
+      <option name="MAIN_CLASS_NAME" value="ray1.tests.SphereTests" />
+      <option name="METHOD_NAME" value="testIntersectCanonical" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTests.testIntersectNoNormals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ray" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ray1.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ray1.tests" />
+      <option name="MAIN_CLASS_NAME" value="ray1.tests.TriangleTests" />
+      <option name="METHOD_NAME" value="testIntersectNoNormals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleTests.testIntersectNoNormals" />
+        <item itemvalue="JUnit.SphereTests.testIntersectCanonical" />
         <item itemvalue="Application.Camera" />
       </list>
     </recent_temporary>
@@ -163,36 +231,47 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SphereTests_testIntersectCanonical - 2019.10.06 at 12h 03m 00s.xml">
+      <configuration name="SphereTests.testIntersectCanonical" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SphereTests_testIntersectCanonical - 2019.10.06 at 12h 05m 14s.xml">
+      <configuration name="SphereTests.testIntersectCanonical" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SphereTests_testIntersectCanonical - 2019.10.06 at 12h 06m 02s.xml">
+      <configuration name="SphereTests.testIntersectCanonical" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32867134" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32867134" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -226,20 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/PerspectiveCamera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/OrthographicCamera.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -247,6 +312,78 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/PerspectiveCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/camera/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/surface/Surface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/tests/TestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/tests/SphereTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/surface/Sphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/IntersectionRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/surface/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+          <folding>
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2843#2844#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ray/src/ray1/tests/TriangleTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>

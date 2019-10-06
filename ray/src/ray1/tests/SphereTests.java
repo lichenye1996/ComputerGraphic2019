@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import egl.math.Vector3;
 import egl.math.Vector3d;
+import org.lwjgl.Sys;
 import ray1.IntersectionRecord;
 import ray1.Ray;
 import ray1.surface.Sphere;
@@ -42,6 +43,8 @@ public class SphereTests {
         TestUtils.assertVector3dEqual(its.location, expectedLocation);
         System.out.println("Testing intersection normal.");
         expectedNormal.set(0.0, 0.0, -1.0);
+        System.out.println(its.normal);
+        System.out.println(expectedNormal);
         TestUtils.assertVector3dEqual(its.normal, expectedNormal);
         System.out.println("Testing intersection time.");
         expectedT = 1.0;

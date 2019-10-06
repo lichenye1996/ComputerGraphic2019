@@ -1,5 +1,7 @@
 package ray1.surface;
 
+import egl.math.Matrix3d;
+import egl.math.Vector2d;
 import ray1.IntersectionRecord;
 import ray1.Ray;
 import egl.math.Vector3;
@@ -63,6 +65,36 @@ public class Triangle extends Surface {
    */
   public boolean intersect(IntersectionRecord outRecord, Ray rayIn) {
     // TODO#Ray Part 1 Task 2: fill in this function.
+    Vector3 aa = owner.getMesh().getPosition(face,0);
+    Vector3d origin = rayIn.origin;
+    Vector3d direction = rayIn.direction;
+    Vector3d a_b = new Vector3d(a, b, c);
+    Vector3d a_c = new Vector3d(d, e, f);
+    Vector3d constant = new Vector3d(aa.x - origin.x, aa.y - origin.y, aa.z - origin.z);
+    Matrix3d Matrix = new Matrix3d(a_b, a_c, direction);
+    Matrix3d tempMatrix1 = new Matrix3d(constant, a_c, direction);
+    Matrix3d tempMatrix2 = new Matrix3d(a_b, constant, direction);
+    Matrix3d tempMatrix3 = new Matrix3d(a_b, a_c, constant);
+    double belta = tempMatrix1.determinant()/Matrix.clone().determinant();
+    double gamma = tempMatrix2.determinant()/Matrix.clone().determinant();
+    double t = tempMatrix3.determinant()/Matrix.clone().determinant();
+    if (!(belta > 0 && gamma > 0 && belta + gamma < 1)) {
+      return false;
+    }
+    outRecord.location.set(origin.clone().add(direction.clone().mul(t)));
+    if (!face.hasNormals()) {
+      outRecord.normal.set(norm);
+    } else {
+      Vector3 norm1 = owner.getMesh().getNormal(face, 0);
+      Vector3 norm2 = owner.getMesh().getNormal(face, 1);
+      Vector3 norm3 = owner.getMesh().getNormal(face, 2);
+      Vector3 finalNorm = norm1.clone().mul((float)(1 - belta - gamma)).add(norm2.clone().mul((float)belta)).add(norm3.clone().mul((float)gamma));
+      outRecord.normal.set(finalNorm);
+    }
+    outRecord.surface = this;
+    outRecord.texCoords.set(new Vector2d(0, 0));
+    outRecord.t = t;
+
 
     
     // If there was an intersection, fill out the intersection record
