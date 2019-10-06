@@ -28,9 +28,9 @@ public class OrthographicCamera extends Camera {
         Vector3d viewPoint = new Vector3d((double)getViewPoint().x, (double)getViewPoint().y, (double)getViewPoint().z);
         Vector3d viewUp = new Vector3d((double)getViewUp().x, (double)getViewUp().y, (double)getViewUp().z);
         d = (new Vector3d(viewDir.x, viewDir.y, viewDir.z)).normalize();
-        w = d.negate().normalize().clone();
-        u = viewUp.cross(w).normalize().clone();
-        v = w.cross(u).normalize().clone();
+        w = d.clone().negate().normalize();
+        u = viewUp.clone().cross(w.clone()).normalize().clone();
+        v = w.clone().cross(u).normalize().clone();
         e = viewPoint.clone();
         // 2) Set up the helper variables if needed
 
@@ -56,8 +56,8 @@ public class OrthographicCamera extends Camera {
         // 2) Set the origin field of outRay for an orthographic camera.
         //    In an orthographic camera, the origin should depend on your transformed
         //    inU and inV and your basis vectors u and v.
-        Vector3d origin = e.add(u.mul(transInU)).add(v.mul(transInV)).clone();
-        Vector3d rayDir = d.negate().clone();
+        Vector3d origin = e.clone().add(u.clone().mul(transInU)).add(v.clone().mul(transInV)).clone();
+        Vector3d rayDir = d.clone();
         // 3) Set the direction field of outRay for an orthographic camera.
         outRay.set(origin, rayDir);
     }
