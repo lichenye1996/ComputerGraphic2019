@@ -163,7 +163,6 @@ public class Scene {
 		myRay.set(rayIn.origin.clone(),rayIn.direction.clone());
 		for (Surface surf:this.surfaces) {
 			boolean isHit = surf.intersect(outRecord, myRay);
-
 			if (isHit){
 				myRay.end = outRecord.t;
 				ret = true;

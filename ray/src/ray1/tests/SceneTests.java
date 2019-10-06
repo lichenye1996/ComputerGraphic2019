@@ -83,9 +83,6 @@ public class SceneTests {
         assertTrue(scene.getFirstIntersection(its, ray0));
         expectedT = 1.0;
         System.out.println("Testing intersection time.");
-        //  TODO
-        System.out.println("expected t " + String.valueOf(expectedT));
-        System.out.println("my t = " + String.valueOf(its.t));
         TestUtils.assertDoublesEqual(expectedT, its.t);
         System.out.println("Testing intersection surface");
         assertTrue(its.surface == sphere1);

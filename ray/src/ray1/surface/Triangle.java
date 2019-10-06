@@ -78,7 +78,7 @@ public class Triangle extends Surface {
     double belta = tempMatrix1.determinant()/Matrix.clone().determinant();
     double gamma = tempMatrix2.determinant()/Matrix.clone().determinant();
     double t = tempMatrix3.determinant()/Matrix.clone().determinant();
-    System.out.println("triangle " + rayIn.end);
+    if (t < rayIn.start) return false;
     if (rayIn.end != 0 && t > rayIn.end) return false;
     if (!(belta > 0 && gamma > 0 && belta + gamma < 1)) {
       return false;
@@ -91,7 +91,7 @@ public class Triangle extends Surface {
       Vector3 norm2 = owner.getMesh().getNormal(face, 1);
       Vector3 norm3 = owner.getMesh().getNormal(face, 2);
       Vector3 finalNorm = norm1.clone().mul((float)(1 - belta - gamma)).add(norm2.clone().mul((float)belta)).add(norm3.clone().mul((float)gamma));
-      outRecord.normal.set(finalNorm);
+      outRecord.normal.set(finalNorm.normalize());
     }
     outRecord.surface = this;
     outRecord.texCoords.set(new Vector2d(0, 0));
