@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CS4620 Filters.iml" filepath="$PROJECT_DIR$/CS4620 Filters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComputerGraphic2019.iml" filepath="$PROJECT_DIR$/ComputerGraphic2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mesh.iml" filepath="$PROJECT_DIR$/mesh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ray.iml" filepath="$PROJECT_DIR$/ray.iml" />
+    </modules>
+  </component>
+</project>
