@@ -147,7 +147,7 @@ public class Scene {
 		//TODO#Ray Part 2: uncomment the following line, and comment the previous line out.
 //		return accelStruct.intersect(new IntersectionRecord(), ray, true);
 	}
-	
+
 	private boolean intersect(IntersectionRecord outRecord, Ray rayIn, boolean anyIntersection) {
 		// TODO#Ray Part 1 Task 3:
 		//			1) Loop through all surfaces in the scene.
@@ -158,9 +158,21 @@ public class Scene {
 		//          4) If anyIntersection is true, return immediately.
 		//		    5) Set outRecord to the IntersectionRecord of the first object hit.
 		//		    6) If there was an intersection, return true; otherwise return false.
-
 		boolean ret = false;
-	
+		Ray myRay = new Ray();
+		myRay.set(rayIn.origin.clone(),rayIn.direction.clone());
+		for (Surface surf:this.surfaces) {
+			boolean isHit = surf.intersect(outRecord, myRay);
+
+			if (isHit){
+				myRay.end = outRecord.t;
+				ret = true;
+			}
+			if (anyIntersection && isHit) {
+				return true;
+			}
+		}
+
 		return ret;
 //		 TODO#Ray Part 2: uncomment the following line, and comment your previous solution out.
 //		 return accelStruct.intersect(outRecord, rayIn, anyIntersection);

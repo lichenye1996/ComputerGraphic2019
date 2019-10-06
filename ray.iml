@@ -25,7 +25,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="AppleJavaExtensions.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/AppleJavaExtensions.jar!/" />
@@ -34,7 +34,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="asm-debug-all.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/asm-debug-all.jar!/" />
@@ -43,7 +43,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="jinput.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/jinput.jar!/" />
@@ -52,7 +52,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="lwjgl_test.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/lwjgl_test.jar!/" />
@@ -61,7 +61,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="lwjgl_util_applet.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/lwjgl_util_applet.jar!/" />
@@ -70,7 +70,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="lwjgl_util.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/lwjgl_util.jar!/" />
@@ -79,7 +79,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="lwjgl-debug.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/lwjgl-debug.jar!/" />
@@ -88,7 +88,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="lwjgl.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/lwjgl.jar!/" />
@@ -97,7 +97,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="lzma.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/lzma.jar!/" />
@@ -106,7 +106,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="openexrjni-3.0.0-javadoc.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/openexrjni-3.0.0-javadoc.jar!/" />
@@ -115,7 +115,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="openexrjni-3.0.0.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/openexrjni-3.0.0.jar!/" />
@@ -127,7 +127,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="openexrjni-test.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ray/deps/lib/openexrjni-test.jar!/" />
@@ -136,7 +136,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="junit4">
         <CLASSES>
           <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
@@ -145,5 +145,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="src" level="project" />
+    <orderEntry type="library" exported="" name="hamcrest-all-1.31" level="project" />
   </component>
 </module>
